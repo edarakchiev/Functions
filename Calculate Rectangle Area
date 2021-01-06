@@ -1,0 +1,10 @@
+def rectangle_area_alc(num_1, num_2):
+    result = num_1 * num_2
+    return result
+
+
+num_1 = int(input())
+num_2 = int(input())
+
+area = rectangle_area_alc(num_1, num_2)
+print(area)
