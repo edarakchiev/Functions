@@ -1,0 +1,9 @@
+def repeat_string(word, number):
+    for n in range(number):
+        print(f"{word}", end="")
+
+
+word = input()
+number = int(input())
+
+repeat_string(word, number)
