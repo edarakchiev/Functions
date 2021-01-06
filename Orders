@@ -1,0 +1,21 @@
+def total_price(product, quantity):
+    coffee = 1.5
+    water = 1
+    coke = 1.4
+    snacks = 2
+    if product == "coffee":
+        result = coffee * quantity
+    elif product == "water":
+        result = water * quantity
+    elif product == "coke":
+        result = coke * quantity
+    elif product == "snacks":
+        result = snacks * quantity
+    return result
+
+
+product = input()
+quantity = int(input())
+price = total_price(product, quantity)
+
+print(f"{price:.2f}")
