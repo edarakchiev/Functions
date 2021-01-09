@@ -1,0 +1,22 @@
+def data_int(num):
+    print(num * 2)
+
+
+def data_float(num):
+    print(f"{num * 1.5:.2f}")
+
+
+def data_string(str_data):
+    print(f"${str_data}$")
+
+
+data_type = input()
+data = input()
+if data_type == "int":
+    data = int(data)
+    data_int(data)
+elif data_type == "real":
+    data = float(data)
+    data_float(data)
+elif data_type == "string":
+    data_string(data)
