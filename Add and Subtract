@@ -1,0 +1,22 @@
+def sum_numbers():
+    def add_func(num_1, num_2):
+        sum_num = num_1 + num_2
+        return sum_num
+
+    def subtract_func(sum_num, num_3):
+        add_func(num_1, num_2)
+        result = sum_num - num_3
+        return result
+
+    add_num = add_func(num_1, num_2)
+    result_num = subtract_func(add_num, num_3)
+    return result_num
+
+
+num_1 = int(input())
+num_2 = int(input())
+num_3 = int(input())
+
+res = sum_numbers()
+
+print(res)
