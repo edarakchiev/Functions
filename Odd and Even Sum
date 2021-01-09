@@ -1,0 +1,21 @@
+def even_sum(number):
+    even_list = []
+    for num in number:
+        num = int(num)
+        if num % 2 == 0:
+            even_list.append(num)
+    return sum(even_list)
+
+
+def odd_sum(number):
+    odd_list = []
+    for num in number:
+        num = int(num)
+        if not num % 2 == 0:
+            odd_list.append(num)
+    return sum(odd_list)
+
+
+number = input()
+
+print(f"Odd sum = {odd_sum(number)}, Even sum = {even_sum(number)}")
