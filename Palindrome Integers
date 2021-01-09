@@ -1,0 +1,11 @@
+def palindrome_num(number):
+    if number == number[::-1]:
+        return number
+
+
+number_list = input().split(", ")
+for num in number_list:
+    if palindrome_num(num):
+        print("True")
+    else:
+        print("False")
