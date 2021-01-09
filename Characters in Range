@@ -1,0 +1,11 @@
+def ascii_print(symbol_1, symbol_2):
+    num_1 = ord(chr_1)
+    num_2 = ord(chr_2)
+    for symbol in range(num_1 + 1, num_2):
+        print(f"{chr(symbol)}", end=" ")
+
+
+chr_1 = input()
+chr_2 = input()
+
+ascii_print(chr_1, chr_2)
