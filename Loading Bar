@@ -1,0 +1,16 @@
+def loading_bar(n):
+    loading_list = [".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ]
+    num = number // 10
+    for i in range(num):
+        loading_list[i] = "%"
+
+    if number < 100:
+        print(f"{number}% [{''.join(loading_list)}]")
+        print("Still loading...")
+    else:
+        print("100% Complete!")
+        print(f"[{''.join(loading_list)}]")
+
+
+number = int(input())
+loading_bar(number)
